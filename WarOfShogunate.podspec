@@ -136,6 +136,8 @@ Pod::Spec.new do |spec|
 
   # spec.requires_arc = true
 
+  spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'IQKeyboardManager'
   spec.dependency 'AFNetworking', '~> 3.0'
