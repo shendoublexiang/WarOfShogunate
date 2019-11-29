@@ -1,0 +1,6 @@
+framework module Pods_WarOfShogunateDemo {
+  umbrella header "Pods-WarOfShogunateDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
