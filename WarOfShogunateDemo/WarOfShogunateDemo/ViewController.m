@@ -26,11 +26,11 @@
     
     [[Shogunate instance] registerShogunateSDK:^(BOOL type) {
         if (type) {
-            [SVProgressHUD showSuccessWithStatus:@"初始化成功"];
-            [SVProgressHUD dismissWithDelay:2.5];
+//            [SVProgressHUD showSuccessWithStatus:@"初始化成功"];
+//            [SVProgressHUD dismissWithDelay:2.5];
         } else{
-            [SVProgressHUD showErrorWithStatus:@"初始化失败"];
-            [SVProgressHUD dismissWithDelay:2.5];
+//            [SVProgressHUD showErrorWithStatus:@"初始化失败"];
+//            [SVProgressHUD dismissWithDelay:2.5];
         }
     }];
     

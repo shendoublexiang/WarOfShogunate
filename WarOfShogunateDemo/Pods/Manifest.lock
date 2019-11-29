@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WarOfShogunate:
-    :commit: e418be5e760e5415defaa64c589ba70c0ae895bc
+    :commit: a38afe6e3f611b1e3d73cda670184cb66c1ed31f
     :git: https://github.com/shendoublexiang/WarOfShogunate.git
 
 SPEC CHECKSUMS:

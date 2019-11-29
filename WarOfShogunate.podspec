@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WarOfShogunate"
-  spec.version      = "0.1.4"
+  spec.version      = "0.1.5"
   spec.summary      = "仅供 WarOfShogunate 项目使用的Framework ."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
     1.版本说明
-      当前版本为：0.1.4 版本。主要新增功能如下：
+      当前版本为：0.1.5 版本。主要新增功能如下：
       添加基础数据上报，添加下拉选择历史账号密码功能，更改对接方式为 Cocoapods 使得环境变量更易控制。
     2.本 Framework 所支持的最低版本为 iOS 10
     3.使用Cocoapods时请打开 framework 模式，即在 Podfile 文件中添加 use_frameworks!
