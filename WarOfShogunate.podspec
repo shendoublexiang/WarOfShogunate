@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "WarOfShogunate.podspec"
+  spec.name         = "WarOfShogunate"
   spec.version      = "0.1.4"
   spec.summary      = "仅供 WarOfShogunate 项目使用的Framework ."
 
