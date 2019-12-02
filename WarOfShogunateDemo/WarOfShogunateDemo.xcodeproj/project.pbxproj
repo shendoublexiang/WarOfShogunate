@@ -10,6 +10,8 @@
 		159275A112A05A5C5D7C81A9 /* Pods_WarOfShogunateDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998CF20AA277EC5D422D5744 /* Pods_WarOfShogunateDemoTests.framework */; };
 		67282BAB41A9D821A4D5A9C2 /* Pods_WarOfShogunateDemo_WarOfShogunateDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD09DAB362B5A718B037AB5 /* Pods_WarOfShogunateDemo_WarOfShogunateDemoUITests.framework */; };
 		C78DA5C53A19E3109FB4E205 /* Pods_WarOfShogunateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DF503110BF89EC91F69FCB /* Pods_WarOfShogunateDemo.framework */; };
+		F203DE6C2394B8C2001CE722 /* IQKeyboardManager.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F203DE6B2394B8C1001CE722 /* IQKeyboardManager.xcassets */; };
+		F203DE6E2394BE53001CE722 /* WarOfShogunateFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F203DE6D2394BE53001CE722 /* WarOfShogunateFramework.bundle */; };
 		F2A6E661239100D4007DEAA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E660239100D4007DEAA0 /* AppDelegate.m */; };
 		F2A6E664239100D4007DEAA0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E663239100D4007DEAA0 /* SceneDelegate.m */; };
 		F2A6E667239100D4007DEAA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E666239100D4007DEAA0 /* ViewController.m */; };
@@ -22,6 +24,7 @@
 		F2A6E695239108AC007DEAA0 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E694239108AC007DEAA0 /* SafariServices.framework */; };
 		F2A6E697239108B6007DEAA0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E696239108B6007DEAA0 /* AdSupport.framework */; };
 		F2A6E699239108C7007DEAA0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E698239108C7007DEAA0 /* StoreKit.framework */; };
+		F2A6E6A1239127DD007DEAA0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2A6E6A0239127DC007DEAA0 /* SVProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		BCD09DAB362B5A718B037AB5 /* Pods_WarOfShogunateDemo_WarOfShogunateDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarOfShogunateDemo_WarOfShogunateDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECA5ABB0BF1601FA54DECBD /* Pods-WarOfShogunateDemo-WarOfShogunateDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarOfShogunateDemo-WarOfShogunateDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-WarOfShogunateDemo-WarOfShogunateDemoUITests/Pods-WarOfShogunateDemo-WarOfShogunateDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F0DF503110BF89EC91F69FCB /* Pods_WarOfShogunateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarOfShogunateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F203DE6B2394B8C1001CE722 /* IQKeyboardManager.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = IQKeyboardManager.xcassets; path = Pods/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.xcassets; sourceTree = "<group>"; };
+		F203DE6D2394BE53001CE722 /* WarOfShogunateFramework.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WarOfShogunateFramework.bundle; path = ../../../../../WarOfShogunateFramework.bundle; sourceTree = "<group>"; };
 		F2A6E65C239100D4007DEAA0 /* WarOfShogunateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarOfShogunateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A6E65F239100D4007DEAA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2A6E660239100D4007DEAA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 		F2A6E694239108AC007DEAA0 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		F2A6E696239108B6007DEAA0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F2A6E698239108C7007DEAA0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F2A6E6A0239127DC007DEAA0 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 		F2A6E653239100D4007DEAA0 = {
 			isa = PBXGroup;
 			children = (
+				F203DE6D2394BE53001CE722 /* WarOfShogunateFramework.bundle */,
+				F203DE6B2394B8C1001CE722 /* IQKeyboardManager.xcassets */,
+				F2A6E6A0239127DC007DEAA0 /* SVProgressHUD.bundle */,
 				F2A6E65E239100D4007DEAA0 /* WarOfShogunateDemo */,
 				F2A6E67A239100D5007DEAA0 /* WarOfShogunateDemoTests */,
 				F2A6E685239100D5007DEAA0 /* WarOfShogunateDemoUITests */,
@@ -297,6 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F203DE6C2394B8C2001CE722 /* IQKeyboardManager.xcassets in Resources */,
+				F203DE6E2394BE53001CE722 /* WarOfShogunateFramework.bundle in Resources */,
+				F2A6E6A1239127DD007DEAA0 /* SVProgressHUD.bundle in Resources */,
 				F2A6E66F239100D5007DEAA0 /* LaunchScreen.storyboard in Resources */,
 				F2A6E66C239100D5007DEAA0 /* Assets.xcassets in Resources */,
 				F2A6E66A239100D4007DEAA0 /* Main.storyboard in Resources */,

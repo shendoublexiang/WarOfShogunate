@@ -72,7 +72,20 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 
 ## 使用说明
 
-由于此 SDK 使用 CocosPod 依赖引用，故首次打开时需要引入资源文件及预编译进而使库文件可以正常使用，具体流程如下：
+由于此 SDK 使用 CocosPod 依赖引用，故首次打开时需要引入资源文件、系统依赖库及预编译进而使库文件可以正常使用，具体流程如下：
+
+#### 引入资源文件
+
+由于SDK内部使用的自身及第三方工具中包含资源文件，故需要在项目工程的 **Copy Bundle Resources** 中引入第三方及自身资源，具体流程如下：
+
+1. 前往设置 -> **‘Build Phases’**
+2. 在 **Copy Bundle Resources** 中引入第三方及自身资源文件
+3. 由于资源文件非系统标准，故在点击加号后需要点击 **Add Other...** 以进入自定义文件选择器
+4. 在弹出的文件中分别前往并选中 **Pods/IQKeyboardManager/IQKeyboardManager/Resource/IQKeyboardManager.xcassets** 、**Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle** 、 **Pods/WarOfShogunate/WarOfShogunateFramework.framework/WarOfShogunateFramework.bundle**
+
+最终如下图所示：
+
+![添加资源文件](http://img01.rastargame.com/p_upload/2019/1202/1575257476258210.png)
 
 #### 引入系统依赖库
 
