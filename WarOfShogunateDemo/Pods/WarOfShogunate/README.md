@@ -11,13 +11,22 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 
 |版本号|日期|版本说明|作者|
 |:-:|:-:|:-:|:-:|
+<<<<<<< HEAD
 |0.1.4|2019.11.29|详细说明如下|Vincent|
+|0.1.6|2019.12.06|详细说明如下|Vincent|
 
-1. 版本更新为 v0.1.4
+1. 版本更新为 v0.1.6
+=======
+|0.1.5|2019.11.29|详细说明如下|Vincent|
+
+1. 版本更新为 v0.1.5
+>>>>>>> 9d4ddb867b973a47c901b5786ae7de89f7301a52
 2. 新增部分：
     - 增加新版本数据打点上报
     - 登录页面增加下拉列表以显示历史账号
     - 登录页面下拉列表增加左滑删除账号
+    - 新增退出登录接口
+    - 新增AppID只读属性
 3. 修改部分
     - 更改对接方式为 Cocoapods
     - 更改头文件中 ‘uploadGameWillStart’ 方法为必接
@@ -72,7 +81,20 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 
 ## 使用说明
 
-由于此 SDK 使用 CocosPod 依赖引用，故首次打开时需要引入资源文件及预编译进而使库文件可以正常使用，具体流程如下：
+由于此 SDK 使用 CocosPod 依赖引用，故首次打开时需要引入资源文件、系统依赖库及预编译进而使库文件可以正常使用，具体流程如下：
+
+#### 引入资源文件
+
+由于SDK内部使用的自身及第三方工具中包含资源文件，故需要在项目工程的 **Copy Bundle Resources** 中引入第三方及自身资源，具体流程如下：
+
+1. 前往设置 -> **‘Build Phases’**
+2. 在 **Copy Bundle Resources** 中引入第三方及自身资源文件
+3. 由于资源文件非系统标准，故在点击加号后需要点击 **Add Other...** 以进入自定义文件选择器
+4. 在弹出的文件中分别前往并选中 **Pods/IQKeyboardManager/IQKeyboardManager/Resource/IQKeyboardManager.xcassets** 、**Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle** 、 **Pods/WarOfShogunate/WarOfShogunateFramework.framework/WarOfShogunateFramework.bundle**
+
+最终如下图所示：
+
+![添加资源文件](http://img01.rastargame.com/p_upload/2019/1202/1575257476258210.png)
 
 #### 引入系统依赖库
 
@@ -94,6 +116,16 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 
 ![编译成功目录树](http://img01.rastargame.com/p_upload/2019/1129/1575014045882878.png)
 
+
+## 属性说明
+
+新增加只读属性 AppKey 用于获取当前SDK中内置的 **AppID**
+
+
+``` objc
+/// AppKey
+@property (nonatomic, copy, readonly)NSString *ShogunateAppKey;
+```
 
 ## 接口说明
 
@@ -139,6 +171,16 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 /// 显示登录页面
 /// @param userInfo 登录信息返回
 - (void)showLoginView:(void(^)(int uid, NSString *token))userInfo;
+```
+
+#### 退出登录
+
+请于合适位置调用退出登录接口 - 收到成功回调后请手动调用登录
+
+``` objc
+/// 切换登录 - 收到成功回调后需要手动调用登录接口，此方法仅讲SDK内部存储的玩家数据置零
+/// @param logoutType 是否退登成功
+- (void)logoutAction:(void(^)(BOOL isLogout))logoutType;
 ```
 
 #### 发起内购

@@ -1,6 +1,6 @@
 {
   "name": "WarOfShogunate",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "仅供 WarOfShogunate 项目使用的Framework .",
   "description": "1.版本说明\n  当前版本为：0.1.5 版本。主要新增功能如下：\n  添加基础数据上报，添加下拉选择历史账号密码功能，更改对接方式为 Cocoapods 使得环境变量更易控制。\n2.本 Framework 所支持的最低版本为 iOS 10\n3.使用Cocoapods时请打开 framework 模式，即在 Podfile 文件中添加 use_frameworks!",
   "homepage": "https://github.com/shendoublexiang/WarOfShogunate",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/shendoublexiang/WarOfShogunate.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "ios": {
     "vendored_frameworks": "WarOfShogunateFramework.framework"

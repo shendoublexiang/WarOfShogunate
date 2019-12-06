@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Shogunate : NSObject
 
+/// AppKey
+@property (nonatomic, copy, readonly)NSString *ShogunateAppKey;
+
 /// 单例
 + (instancetype)instance;
 
@@ -27,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 显示登录页面
 /// @param userInfo 登录信息返回
 - (void)showLoginView:(void(^)(int uid, NSString *token))userInfo;
+
+/// 切换登录 - 收到成功回调后需要手动调用登录接口，此方法仅讲SDK内部存储的玩家数据置零
+/// @param logoutType 是否退登成功
+- (void)logoutAction:(void(^)(BOOL isLogout))logoutType;
 
 /// c创建角色上报
 /// @param roleID 角色ID

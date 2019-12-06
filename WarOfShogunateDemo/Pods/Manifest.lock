@@ -18,7 +18,7 @@ PODS:
   - IQKeyboardManager (6.5.4)
   - SVProgressHUD (2.2.5)
   - UICKeyChainStore (2.1.2)
-  - WarOfShogunate (0.1.5):
+  - WarOfShogunate (0.1.6):
     - AFNetworking (~> 3.0)
     - FLAnimatedImage (~> 1.0)
     - IQKeyboardManager
@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WarOfShogunate:
-    :commit: 22d9703da5db6d414362898ffcbe70af6b60a86e
+    :commit: c14c457ba832c96cd870ffc50ce15661957f6ec7
     :git: https://github.com/shendoublexiang/WarOfShogunate.git
 
 SPEC CHECKSUMS:
@@ -51,7 +51,7 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
-  WarOfShogunate: 15802a1eed537ef4608373355c22adc98d006c1d
+  WarOfShogunate: aeb846dd8fb73f9b1ab5e495eb3a278e6a180726
 
 PODFILE CHECKSUM: 4f60f36f6efc2446020725b055867ab685ef81f5
 
