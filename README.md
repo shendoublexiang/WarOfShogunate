@@ -12,12 +12,15 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 |版本号|日期|版本说明|作者|
 |:-:|:-:|:-:|:-:|
 |0.1.4|2019.11.29|详细说明如下|Vincent|
+|0.1.6|2019.12.06|详细说明如下|Vincent|
 
-1. 版本更新为 v0.1.4
+1. 版本更新为 v0.1.6
 2. 新增部分：
     - 增加新版本数据打点上报
     - 登录页面增加下拉列表以显示历史账号
     - 登录页面下拉列表增加左滑删除账号
+    - 新增退出登录接口
+    - 新增AppID只读属性
 3. 修改部分
     - 更改对接方式为 Cocoapods
     - 更改头文件中 ‘uploadGameWillStart’ 方法为必接
@@ -108,6 +111,16 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 ![编译成功目录树](http://img01.rastargame.com/p_upload/2019/1129/1575014045882878.png)
 
 
+## 属性说明
+
+新增加只读属性 AppKey 用于获取当前SDK中内置的 **AppID**
+
+
+``` objc
+/// AppKey
+@property (nonatomic, copy, readonly)NSString *ShogunateAppKey;
+```
+
 ## 接口说明
 
 #### 数据相关
@@ -152,6 +165,16 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 /// 显示登录页面
 /// @param userInfo 登录信息返回
 - (void)showLoginView:(void(^)(int uid, NSString *token))userInfo;
+```
+
+#### 退出登录
+
+请于合适位置调用退出登录接口 - 收到成功回调后请手动调用登录
+
+``` objc
+/// 切换登录 - 收到成功回调后需要手动调用登录接口，此方法仅讲SDK内部存储的玩家数据置零
+/// @param logoutType 是否退登成功
+- (void)logoutAction:(void(^)(BOOL isLogout))logoutType;
 ```
 
 #### 发起内购
