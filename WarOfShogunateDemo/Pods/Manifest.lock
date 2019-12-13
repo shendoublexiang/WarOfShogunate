@@ -29,7 +29,7 @@ DEPENDENCIES:
   - WarOfShogunate (from `https://github.com/shendoublexiang/WarOfShogunate.git`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - FLAnimatedImage
     - IQKeyboardManager
@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WarOfShogunate:
-    :commit: c14c457ba832c96cd870ffc50ce15661957f6ec7
+    :commit: 815e734f3dfa3572dea716aae6b7d8245c76698d
     :git: https://github.com/shendoublexiang/WarOfShogunate.git
 
 SPEC CHECKSUMS:
@@ -53,6 +53,6 @@ SPEC CHECKSUMS:
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
   WarOfShogunate: aeb846dd8fb73f9b1ab5e495eb3a278e6a180726
 
-PODFILE CHECKSUM: 4f60f36f6efc2446020725b055867ab685ef81f5
+PODFILE CHECKSUM: e24834863ddbb3548d4827174d942f2b918a179f
 
 COCOAPODS: 1.8.4
