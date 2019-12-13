@@ -46,17 +46,18 @@ WarOfShogunate 仅供 **WarOfShogunate** 项目使用的Framework 。
 
 要使用 CocoaPods 将 WarOfShogunate 集成到 **Xcode** 项目中，请在工程目录下的 *PodFile* 文件中指定此SDK，完成后，对应的 *PodFile* 文件应入下所示：
 
-	source 'https://github.com/CocoaPods/Specs.git'
-	#使用Frameworks
-	use_frameworks!
-    #此版本SDK 由 iOS 10.0 开始支持
-	platform :ios, '10.0'
-	
-	#此处 target 应为对应工程的 target name
-	target 'TargetName' do
-		pod 'WarOfShogunate',:git=>'https://github.com/shendoublexiang/WarOfShogunate.git'
-		#如还依赖其他库，可在此加入对应 pod 语句
-	end
+     source 'https://cdn.cocoapods.org/'
+     platform :ios, '10.0'
+
+    target 'WarOfShogunateDemo' do
+      # Comment the next line if you don't want to use dynamic frameworks
+      use_frameworks!
+      
+      project 'WarOfShogunateDemo'
+      # Pods for WarOfShogunateDemo
+      pod 'WarOfShogunate',:git=>'https://github.com/shendoublexiang/WarOfShogunate.git'
+
+    end
 
 [iOS 版本占有率查询 个人](https://david-smith.org/iosversionstats/)
 
